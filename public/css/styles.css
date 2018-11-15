@@ -23,9 +23,10 @@ body {
   font-family: 'Nunito', sans-serif;
   color: #000; }
 
-.heading-3 {
-  font-weight: 300;
-  color: #000; }
+a {
+  color: #CED0CF; }
+  a:hover {
+    color: white; }
 
 .header {
   padding-top: 4rem; }
@@ -55,8 +56,7 @@ body {
   .header__subtitle {
     font-size: 1.5rem;
     letter-spacing: 2px;
-    font-weight: 100;
-    color: #000; }
+    font-weight: 100; }
   .header__links {
     position: absolute;
     bottom: 8vh;
@@ -73,22 +73,17 @@ body {
   .header__projectsLink {
     margin-top: 1.5rem;
     display: inline-block;
-    transition: .2s transform ease-out; }
+    transition: .2s transform; }
     .header__projectsLink:hover {
       transform: translateY(1px); }
     .header__projectsLink a,
     .header__projectsLink a:link,
     .header__projectsLink a:visited {
-      color: #CED0CF;
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 2.5px; }
-    .header__projectsLink a:hover {
-      color: white;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
   .header__downArrow {
-    font-size: 3rem;
-    margin: -.5rem 0; }
+    font-size: 2rem; }
 
 .wrapper {
   margin-left: auto;
@@ -116,6 +111,36 @@ body {
   text-shadow: 0 1px 2px rgba(51, 51, 51, 0.2);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #CED0CF; }
+
+.contact {
+  text-align: right;
+  border-right: 1px solid #CED0CF;
+  padding-right: 3rem; }
+  .contact__title {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding-bottom: .2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #CED0CF; }
+  .contact__link, .contact__link:link, .contact__link:visited {
+    color: #CED0CF;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: .2rem; }
+  .contact__link:hover {
+    color: white; }
+
+.copy {
+  padding-left: 3rem; }
+
 .section-header {
   height: 105vh;
   background-image: url(../images/foggy.jpg);
@@ -130,6 +155,10 @@ body {
   background-image: linear-gradient(to bottom, rgba(37, 51, 40, 0.9), rgba(3, 13, 12, 0.5)), url(../images/funky-lines.png);
   background-repeat: repeat; }
 
+.section-footer {
+  background-image: linear-gradient(to bottom, rgba(2, 10, 7, 0.9), #020a07), url(../images/funky-lines.png);
+  padding: 3rem 0; }
+
 .section-title {
   text-transform: uppercase;
   font-size: 3rem;
@@ -141,7 +170,6 @@ body {
   background: rgba(255, 255, 255, 0.3);
   position: relative;
   overflow: hidden;
-  border: 1px solid #000;
   border-radius: 5px; }
   .project:hover .project__info {
     background-color: rgba(255, 255, 255, 0.2); }
@@ -158,7 +186,6 @@ body {
   .project__titleContainer {
     flex: 1;
     padding: .3rem 1rem;
-    border-bottom: 1px solid #000;
     background-color: rgba(255, 255, 255, 0.3); }
   .project__bodyContainer {
     flex: 2;
@@ -174,8 +201,7 @@ body {
   .project [class^="devicon-"] {
     font-size: 1.9rem; }
   .project__icon {
-    font-size: 2rem;
-    color: #000; }
+    font-size: 2rem; }
     .project__icon:not(:last-child) {
       padding-right: .5rem; }
   .project__photo {

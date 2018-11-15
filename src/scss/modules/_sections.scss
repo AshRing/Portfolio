@@ -17,6 +17,14 @@
     url(../images/funky-lines.png);
     background-repeat: repeat;
 }
+.section-footer {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(#020A07, .9), 
+        rgba(#020A07, 1)), 
+    url(../images/funky-lines.png);
+    padding: 3rem 0;
+}
 
 .section-title {
     text-transform: uppercase;

@@ -10,3 +10,11 @@ body {
     font-family: 'Nunito', sans-serif;
     color: #000;
 }
+
+a {
+    color: $color-grey-light;
+
+    &:hover {
+        color: white;
+    }
+}
