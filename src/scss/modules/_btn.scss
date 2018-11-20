@@ -7,22 +7,25 @@
         padding: .8rem 2rem;
         font-size: 1.2rem;
         width: 100%;
-        color: $color-grey-light;
+        color: black;
+        font-weight: 700;
 
         //Change for the default button element
-        border: 1px solid $color-grey-light;
+        background: rgba($color-grey-light, .8);
         border-radius: 3px;
         cursor: pointer;
+        box-shadow: 0 2px 2px rgba(#000,.2);
         transition: .2s transform ease-out;
     }
 
-    &:hover {
-        color: black;
-        font-weight: 700;
-        background:$color-grey-light;
-        border: 1px solid $color-grey-light;
-        transform: translateY(1px);
-        text-shadow: 0 1px 2px rgba(#333,.2);
-        box-shadow: 0 2px 2px rgba(#000,.2);
-    }
+    @include respond(medium) {
+
+        &:hover {
+            color: black;
+            background:$color-grey-light;
+            transform: translateY(1px);
+            text-shadow: 0 2px 2px rgba(#000, 0);
+            box-shadow: 0 2px 2px rgba(#000,.5);
+        }
+    }   
 }

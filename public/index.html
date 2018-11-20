@@ -13,10 +13,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="section-header">
-            <div class="wrapper">
+        <div class="wrapper">
+            <div class="section-header">
                 <header class="header">
-                    <div class="header__flex">
+                    <div class="header__titleBox">
                         <div class="header__logo-box">
                             <img src="images/ARinitialsblack.png" class="header__logo">
                             <!-- <img src="images/ashmuse.png" class="header__portrait"> -->
@@ -26,19 +26,26 @@
                             <h2 class="header__subtitle">Front-End Developer living in Denver, CO.</h2>
                         </div>
                     </div>
-                    <div class="header__links">
-                        <div class="header__socialLinks">
-                            <a href="#" target="_blank" class="btn header__link"><i class="fas fa-file-alt"></i>&nbsp;Resume</a>
-                            <a href="https://github.com/ashring" target="_blank" class="btn header__link"><i class="fab fa-github"></i>&nbsp;Github</a>
-                            <a href="https://www.linkedin.com/in/ashleeringler/" target="_blank" class="btn header__link"><i class="fab fa-linkedin"></i>&nbsp;LinkedIn</a>
-                        </div>
-                        <div class="header__projectsLink">
-                            <a href="#projects">
-                                <h2 class="header__projectText">Projects</h2>
-                                <i class="fas fa-angle-down header__downArrow"></i>
-                            </a>
+            
+                    <div class="header__socialLinks">
+                        <a href="#" target="_blank" class="btn header__link"><i class="fas fa-file-alt"></i>&nbsp;Resume</a>
+                        <a href="https://github.com/ashring" target="_blank" class="btn header__link"><i class="fab fa-github"></i>&nbsp;Github</a>
+                        <a href="https://www.linkedin.com/in/ashleeringler/" target="_blank" class="btn header__link"><i class="fab fa-linkedin"></i>&nbsp;LinkedIn</a>
+                    </div>
+                    <div class="header__description">
+                        <img src="images/ashmuse.png" >
+                        <div class="header__descriptionText">
+                            <p><strong>I enjoy making useful and creative web apps that deliver rich user experiences.</strong></p>
+                            <p>I first got into programming by making various arduino projects in C/C++ in 2016, my favorites being a batter-powered LED saber that changed light modes with a button and a pair of step-reactive LED shoes. After some soul-searching, I  discovered an old childhood passion for Web Development and have been self-studying for 2 years.</p>
+                            <p>I am always looking to challenge myself and expand my knowledge. I am currently seeking a Front-End Developer position. Please <a href="mailto:ashleeringler@gmail.com">email</a> me for inquiries.</p>
                         </div>
                     </div>
+                    <!-- <div class="header__projectsLink">
+                        <a href="#projects">
+                            <h2 class="header__projectText">Projects</h2>
+                            <i class="fas fa-angle-down header__downArrow"></i>
+                        </a>
+                    </div> -->
                     
                     <!-- <div class="main-nav">
                         <li><a href="#">Projects</a></li>
@@ -52,71 +59,75 @@
     <div class="section-projects" id="projects">
         <div class="wrapper">
             <h1 class="section-title">Projects</h1>
-            <div class="project">
-                <div class="project__info">
-                    <div class="project__titleContainer">
-                        <h2 class="heading-2">Daily Planner</h2>
+            <div class="section-projects__flex">
+                <div class="project">
+                    <div class="project__photo project__photo--1">
                     </div>
-                    <div class="project__bodyContainer">
-                        <p class="project__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna. Fermentum et sollicitudin ac orci phasellus.</p>
-                    </div>    
-                    <div class="project__techContainer">
-                        <i class="fab fa-html5 project__icon"></i>
-                        <i class="fab fa-css3-alt project__icon"></i>
-                        <i class="devicon-bootstrap-plain project__icon"></i>
-                        <i class="fab fa-js-square project__icon"></i>
-                        <i class="devicon-webpack-plain project__icon"></i>
-                        <i class="fab fa-github project__icon"></i>
-                        <i class="devicon-visualstudio-plain project__icon"></i>
-                    </div>
-                </div>
-                <div class="project__photo">
-                    <img src="images/project1.jpg">
-                </div>
-            </div>
-            <div class="project">
-                <div class="project__info">
-                    <div class="project__titleContainer">
-                        <h2 class="heading-2">Portfolio</h2>
-                    </div>
-                    <div class="project__bodyContainer">
-                        <p class="project__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna. Fermentum et sollicitudin ac orci phasellus.</p>
-                    </div>
-                    <div class="project__techContainer">
+                    <div class="project__info">
+                        <div class="project__titleContainer">
+                            <h2 class="heading-2">Daily Planner</h2>
+                        </div>
+                        <div class="project__bodyContainer">
+                            <p class="project__text">Planner application made with Javascript used to keep myself accountable. Planner uses local Rest API to store daily data, which the I can then review. When reviewing, there is an option to view statistics about the data, like how consistently some of the tasks were done.</p>
+                        </div>    
+                        <div class="project__techContainer">
                             <i class="fab fa-html5 project__icon"></i>
                             <i class="fab fa-css3-alt project__icon"></i>
-                            <i class="fab fa-sass project__icon"></i>
+                            <i class="devicon-bootstrap-plain project__icon"></i>
                             <i class="fab fa-js-square project__icon"></i>
                             <i class="devicon-webpack-plain project__icon"></i>
                             <i class="fab fa-github project__icon"></i>
                             <i class="devicon-visualstudio-plain project__icon"></i>
+                        </div>
                     </div>
+                    
                 </div>
-                <div class="project__photo">
-                    <img src="images/project2.jpg">
+                <div class="project">
+                    <div class="project__photo project__photo--2">
+                        <!-- <img src="images/project2.jpg"> -->
+                    </div>
+                    <div class="project__info">
+                        <div class="project__titleContainer">
+                            <h2 class="heading-2">Portfolio</h2>
+                        </div>
+                        <div class="project__bodyContainer">
+                            <p class="project__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna. Fermentum et sollicitudin ac orci phasellus.</p>
+                        </div>
+                        <div class="project__techContainer">
+                                <i class="fab fa-html5 project__icon"></i>
+                                <i class="fab fa-css3-alt project__icon"></i>
+                                <i class="fab fa-sass project__icon"></i>
+                                <i class="fab fa-js-square project__icon"></i>
+                                <i class="devicon-webpack-plain project__icon"></i>
+                                <i class="fab fa-github project__icon"></i>
+                                <i class="devicon-visualstudio-plain project__icon"></i>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
-            <div class="project">
-                <div class="project__info">
-                    <div class="project__titleContainer">
-                        <h2 class="heading-2">Project 3</h2>
+                <div class="project">
+                    <div class="project__photo project__photo--3">
+                        <!-- <img src="images/project3.jpg"> -->
                     </div>
-                    <div class="project__bodyContainer">
-                        <p class="project__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna. Fermentum et sollicitudin ac orci phasellus.</p>
+                    <div class="project__info">
+                        <div class="project__titleContainer">
+                            <h2 class="heading-2">Project 3</h2>
+                        </div>
+                        <div class="project__bodyContainer">
+                            <p class="project__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna. Fermentum et sollicitudin ac orci phasellus.</p>
+                        </div>
+                        <div class="project__techContainer">
+                                <i class="fab fa-html5 project__icon"></i>
+                                <i class="fab fa-css3-alt project__icon"></i>
+                                <i class="fab fa-sass project__icon"></i>
+                                <i class="fab fa-js-square project__icon"></i>
+                                <i class="fab fa-react project__icon"></i>
+                                <i class="devicon-webpack-plain project__icon"></i>
+                                <i class="fab fa-github project__icon"></i>
+                                <i class="devicon-visualstudio-plain project__icon"></i>
+                        </div>
                     </div>
-                    <div class="project__techContainer">
-                            <i class="fab fa-html5 project__icon"></i>
-                            <i class="fab fa-css3-alt project__icon"></i>
-                            <i class="fab fa-sass project__icon"></i>
-                            <i class="fab fa-js-square project__icon"></i>
-                            <i class="fab fa-react project__icon"></i>
-                            <i class="devicon-webpack-plain project__icon"></i>
-                            <i class="fab fa-github project__icon"></i>
-                            <i class="devicon-visualstudio-plain project__icon"></i>
-                    </div>
-                </div>
-                <div class="project__photo">
-                    <img src="images/project3.jpg">
+                    
                 </div>
             </div>
         </div>
