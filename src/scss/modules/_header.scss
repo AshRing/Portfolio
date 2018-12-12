@@ -1,13 +1,6 @@
 .header {
     padding-top: 3rem;
 
-    &__titleBox {
-        @include respond(small) {
-            border-bottom: 2px solid #000;
-            padding-bottom: 2rem;
-        }
-    }
-
     &__logo {
         width: 175px;
         height: 175px;
@@ -50,14 +43,13 @@
         margin: 2rem 0;
         padding: 8rem 2rem;
         width: 100%;
-        background: rgba(#fff, .5);
+        background: rgba(#fff, .3);
         font-size: 1.1rem;
 
         -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
         clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
 
         @include respond(small) {
-            border-radius: 5px;
             padding: 4rem 5rem;
         }
 
