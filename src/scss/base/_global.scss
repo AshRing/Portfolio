@@ -12,7 +12,9 @@ body {
 }
 
 a {
-    color: $color-grey-light;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
 
     &:hover {
         color: white;

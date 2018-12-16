@@ -22,7 +22,7 @@ body {
 }
 
 .section-projects {
-    padding: 5rem 0;
+    padding: 5rem 0 2rem;
     min-height: 110vh;
     // background-image: linear-gradient(
     //     to bottom, 
@@ -38,6 +38,7 @@ body {
     }
 
     @include respond(xsmall) {
+        
     }
 }
 .section-footer {

@@ -2,13 +2,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $color-grey-light;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+
+    @include respond(xsmall) {
+        flex-direction: row;
+    }
 }
 
 .contact {
-    text-align: right;
-    border-right: 1px solid $color-grey-light;
-    padding-right: 3rem;
+    border-bottom: $border-primary;
+    padding-bottom: 8rem;
+
+    @include respond(xsmall) {
+        text-align: right;
+        border-bottom: none;
+        border-right: $border-primary;
+        padding-right: 3rem;
+        padding-bottom: 0;
+    }
 
     &__title {
         text-transform: uppercase;
@@ -16,19 +29,20 @@
         letter-spacing: 3px;
         padding-bottom: .2rem;
         margin-bottom: 1rem;
-        border-bottom: 1px solid $color-grey-light;
+        border-bottom: $border-primary;
     }
 
     &__link {
         &,
         &:link,
         &:visited {
-            color: $color-grey-light;
-            text-decoration: none;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
             margin-bottom: .2rem;
+            display: block;
+
+            @include respond(xsmall) {
+                text-align: right;
+                justify-content: flex-end;
+            }
         }
 
         &:hover {
@@ -38,5 +52,11 @@
 }
 
 .copy {
-    padding-left: 3rem;
+    padding: 3rem 0;
+    line-height: 1.6;
+
+    @include respond(xsmall) {
+        padding-left: 3rem;
+        text-align: left;
+    }
 }

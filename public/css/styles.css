@@ -24,7 +24,9 @@ body {
   color: #000; }
 
 a {
-  color: #CED0CF; }
+  color: #000;
+  text-decoration: none;
+  font-weight: bold; }
   a:hover {
     color: white; }
 
@@ -60,6 +62,7 @@ a {
     width: 100%;
     background: rgba(255, 255, 255, 0.3);
     font-size: 1.1rem;
+    line-height: 1.7;
     -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
     clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%); }
     @media screen and (min-width: 56.25em) {
@@ -133,6 +136,12 @@ a {
   margin-right: auto;
   max-width: 1100px; }
 
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -159,31 +168,47 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #CED0CF; }
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center; }
+  @media screen and (min-width: 37.5em) {
+    .footer {
+      flex-direction: row; } }
 
 .contact {
-  text-align: right;
-  border-right: 1px solid #CED0CF;
-  padding-right: 3rem; }
+  border-bottom: 1px solid #000;
+  padding-bottom: 8rem; }
+  @media screen and (min-width: 37.5em) {
+    .contact {
+      text-align: right;
+      border-bottom: none;
+      border-right: 1px solid #000;
+      padding-right: 3rem;
+      padding-bottom: 0; } }
   .contact__title {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 3px;
     padding-bottom: .2rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #CED0CF; }
+    border-bottom: 1px solid #000; }
   .contact__link, .contact__link:link, .contact__link:visited {
-    color: #CED0CF;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: .2rem; }
+    margin-bottom: .2rem;
+    display: block; }
+    @media screen and (min-width: 37.5em) {
+      .contact__link, .contact__link:link, .contact__link:visited {
+        text-align: right;
+        justify-content: flex-end; } }
   .contact__link:hover {
     color: white; }
 
 .copy {
-  padding-left: 3rem; }
+  padding: 3rem 0;
+  line-height: 1.6; }
+  @media screen and (min-width: 37.5em) {
+    .copy {
+      padding-left: 3rem;
+      text-align: left; } }
 
 body {
   background-image: linear-gradient(to bottom, rgba(57, 9, 119, 0.5), rgba(57, 9, 119, 0.8)), url("../images/topography.png"); }
@@ -194,7 +219,7 @@ body {
   text-align: center; }
 
 .section-projects {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem;
   min-height: 110vh;
   background-repeat: repeat; }
   .section-projects__flex {
@@ -219,15 +244,16 @@ body {
   width: 30%;
   min-width: 300px;
   height: auto;
+  min-height: 36rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   transition: transform .2s ease-out; }
-  .project:hover {
-    transform: scale(1.1); }
+  @media screen and (min-width: 75em) {
+    .project:hover {
+      transform: scale(1.05); } }
   .project__info {
     height: 100%;
-    padding-bottom: 3rem;
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -239,22 +265,38 @@ body {
   .project__bodyContainer {
     padding: 1rem 1.5rem; }
   .project__techContainer {
-    padding: .5rem 1rem;
+    margin-top: 1rem;
+    padding: 0 1rem 1rem;
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%; }
   .project [class^="devicon-"] {
     font-size: 1.9rem; }
   .project__icon {
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin-top: .5rem;
+    transition: all .2s ease-out; }
+    .project__icon:hover {
+      color: #390977; }
     .project__icon:not(:last-child) {
-      margin-right: .2rem; }
+      margin-right: .5rem; }
   .project__photo {
     height: 13rem;
     width: 100%;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     .project__photo--1 {
-      background-image: url("../images/project1.jpg"); }
+      background-image: url("../images/PlannerAppThumb1.png"); }
     .project__photo--2 {
       background-image: url("../images/project2.jpg"); }
     .project__photo--3 {
       background-image: url("../images/project3.jpg"); }
+  .project__link {
+    margin: .5rem 0;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #000; }
