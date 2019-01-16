@@ -5,8 +5,8 @@ body {
     // background-position: center;
     background-image: linear-gradient(
             to bottom, 
-            rgba(#390977, .5), 
-            rgba(#390977, .8)), 
+            rgba($color-grey-dark, .5), 
+            rgba($color-grey-dark, .8)), 
         url('../images/topography.png');
 }
 

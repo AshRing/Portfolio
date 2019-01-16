@@ -32,7 +32,11 @@
     }
 
     &__bodyContainer {
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.5rem 3rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__techContainer {
@@ -57,7 +61,7 @@
         transition: all .2s ease-out;
 
         &:hover {
-            color: $color-purple;
+            color: $color-grey-dark;
         }
 
         &:not(:last-child) {
@@ -78,7 +82,7 @@
         }
 
         &--2 {
-            background-image: url('../images/project2.jpg');
+            background-image: url('../images/SkiThumb1.png');
         }
 
         &--3 {
@@ -87,10 +91,11 @@
     }
 
     &__link {
+        text-align: center;
         margin: .5rem 0;
-        display: inline-block;
         font-size: 1.2rem;
         color: #000;
+        display: block;
     }
 }
 
