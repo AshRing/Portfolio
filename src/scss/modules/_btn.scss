@@ -22,7 +22,7 @@
 
         &:hover {
             color: black;
-            background:$color-grey-light;
+            background: rgba($color-grey-light, .7);
             transform: translateY(1px);
             text-shadow: 0 2px 2px rgba(#000, 0);
             box-shadow: 0 2px 2px rgba(#000,.5);

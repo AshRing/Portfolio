@@ -1,9 +1,10 @@
 body {
-    background-image: linear-gradient(
-            to bottom, 
-            rgba($color-grey-dark, .6), 
-            rgba($color-grey-dark, .9)), 
-        url('../images/topography.png');
+    background: rgba($color-grey-light, .5);
+    // background-image: linear-gradient(
+    //         to bottom, 
+    //         rgba($color-grey-dark, .6), 
+    //         rgba($color-grey-dark, .9)), 
+    //     url('../images/topography.png');
 }
 
 .section-header {
